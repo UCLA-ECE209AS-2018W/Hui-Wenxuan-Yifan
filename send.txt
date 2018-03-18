@@ -1,0 +1,3 @@
+./client/proxmark3.exe COM3
+data load X:/data.txt
+lf sim
