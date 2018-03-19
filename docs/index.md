@@ -28,6 +28,7 @@ The Qihoo’s project built a pair of their own custom devices. Their gadgets in
 
 ### III. Tool Overview and Setup
 * _Tool Overview_
+
 The main tool used in our attack is two Proxmark3, which are Software Defined Radios that is designed specifically for the RFID frequencies. The Proxmark3 is a general purpose RFID tool which target at 125kHz (Low Frequency) to 13.56MHz (High Frequency). It is a completely open source tool and the Github repository can be found in the link: https://github.com/Proxmark/proxmark3. The SDR tool consist of an ARM CPU and a Xilinx Spartan-II FPGA. Two separate antenna port for low frequency and high frequency operations are presented on board so that the tool will support the multi-frequency operation. While in our application, only the low frequency was used. The SDR can be completely powered by USB and interface using serial communication or it can also be set to standalone mode which used battery as the power source. 
 
 As we further explored the tool we found that most of modulation and demodulation tasks as well as controlling the antenna is done using the FPGA and the CPU is just responsible for sending commands to the FPGA and communicate with the serial interface. However, some of the advanced functions such as coding/decoding the tag frame are also implemented in the CPU which we did not use in the project.
@@ -71,6 +72,7 @@ We have used an additional 125kHz RFID card reader in our experiment. The functi
 ### IV. Theoretical Attack Setup
 
 ![ima2](https://raw.githubusercontent.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/images/fig2.png)
+
 Figure. 2 Attack Setup Diagram
 
 As figure 2 shown, we will have two SDRs and two computers to mimic the communication between the car to the car key. In the real world setting, when the open door command is triggered, the car will send a signal via 125kHz which is a signal only range 1-2 meters. Our goal here is to replay the same 125kHz signal to the car key located outside the car signal’s range. Since the car key uses 315MHz signal (long range communication) to respond back to the car, we don’t need to necessarily replay the car key signal as long as the car key is within 50 meters from the car.
@@ -98,7 +100,7 @@ In this script, we wrote a while loop to constantly check if the file exist in t
 
 There is a external reader field provided to the SDR when replay the signal to the car key as shown in figure 6. The reason is the SDR is only support simulating a passive tag which means it only replays the signal when a reader field presents. The reader field shown here is just a simple pulse followed by DC non-zero signal so that it will not interfere with the replay signal.
 
-![ima6](https://raw.githubusercontent.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/images/fig6.png)
+![img6](https://raw.githubusercontent.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/images/fig6.png)
 Figure 6. Key side RFID relay
 
 * _WiFi Network_
