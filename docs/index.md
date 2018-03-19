@@ -47,15 +47,16 @@ After the tool is fully setup, it can use USB serial port to communicate to the 
 Figure 1. Client Software
 
 The main commands we used are summarized below:
-Command | Description
-------- | -----------
-lf config L t 8 | Low Frequency Configuration: -L: 125kHz -t :threshold
-lf snoop | Capture the Low Frequency signal that exceeds the threshold and save the trace into the graph window
-data samples 1800 | Get 1800 data samples
-data save C:/... | Save the trace data to file
-data load C:/... | Load the graph window from file
-lf sim | Simulate the low frequency signal stored in the graph window
-exit | Exit the client
+
+| Command           | Description                                                                                          |
+| ----------------- | ---------------------------------------------------------------------------------------------------- |
+| lf config L t 8   | Low Frequency Configuration: -L: 125kHz -t :threshold                                                |
+| lf snoop          | Capture the Low Frequency signal that exceeds the threshold and save the trace into the graph window |
+| data samples 1800 | Get 1800 data samples                                                                                |
+| data save C:/...  | Save the trace data to file                                                                          |
+| data load C:/...  | Load the graph window from file                                                                      |
+| lf sim            | Simulate the low frequency signal stored in the graph window                                         |
+| exit              | Exit the client                                                                                      |
 
 This is the part of the commands that used in the final demonstration. The commands such as demodulation and the modifications we made on the original commands are not shown in the table above for simplicity. 
 
@@ -100,7 +101,7 @@ In this script, we wrote a while loop to constantly check if the file exist in t
 
 There is a external reader field provided to the SDR when replay the signal to the car key as shown in figure 6. The reason is the SDR is only support simulating a passive tag which means it only replays the signal when a reader field presents. The reader field shown here is just a simple pulse followed by DC non-zero signal so that it will not interfere with the replay signal.
 
-![img6](https://raw.githubusercontent.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/images/fig6.png)
+![img6](https://raw.githubusercontent.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/images/fig6.jpg)
 Figure 6. Key side RFID relay
 
 * _WiFi Network_
