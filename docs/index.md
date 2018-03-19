@@ -7,11 +7,11 @@ Team: Hui Wang, Wenxuan Mao, Yifan Zhang
 
 `The proposal can be viewed at: `
 
-https://github.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/proposal.pdf 
+[proposal](https://github.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/proposal.pdf)
 
 `The midterm report can be viewed at:  `
 
-https://github.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/Mideterm_report.pdf 
+[midterm_report](https://github.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/Mideterm_report.pdf)
 
 ### I. Introduction
 
