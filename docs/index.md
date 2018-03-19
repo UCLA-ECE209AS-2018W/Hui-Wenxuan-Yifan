@@ -161,6 +161,10 @@ Since the Proxmark3 SDR is specialized on RFID tag related fields, we also did s
 
 By this attack, we could tell that the HID tag used for accessing the parking structure used static information, which means it do not have a challenge-response mechanism enabled to enhance the security. Anyone have physical access to the parking card can copy the information stored in the card and use it to enter the parking structure. Another finding is that the RFID reader for the parking structure on UCLA is always on, so that even I walked into the gate using the SDR simulated tag, the gate will open for me. That will potentially cause some energy waste and also have some other potential security issues.
 
+A demo video can be viewed at:
+
+[![video](http://img.youtube.com/vi/UhG9kbs7w3A/0.jpg)](http://www.youtube.com/watch?v=UhG9kbs7w3A)
+
 
 ### VIII. Conclusion
 
