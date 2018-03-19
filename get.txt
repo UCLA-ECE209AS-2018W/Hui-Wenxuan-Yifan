@@ -1,0 +1,6 @@
+time ./client/proxmark3.exe COM8
+lf config L t 8
+lf snoop
+data samples 1800
+data save C:/users/Kevin/Desktop/ProxSpace-master/data.txt
+exit
