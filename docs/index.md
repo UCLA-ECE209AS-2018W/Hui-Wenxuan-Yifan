@@ -3,6 +3,15 @@
 
 Team: Hui Wang, Wenxuan Mao, Yifan Zhang
 
+`This is the final analysis report for this project`
+
+`The proposal can be viewed at: `
+
+https://github.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/proposal.pdf 
+
+`The midterm report can be viewed at:  `
+
+https://github.com/UCLA-ECE209AS-2018W/Hui-Wenxuan-Yifan/master/docs/Mideterm_report.pdf 
 
 ### I. Introduction
 
@@ -121,6 +130,10 @@ Figure 7. Signal Trace from collected from Toyota
 We attacked three models of car: a 2017 Toyota Avalon, a 2017 Honda Civic, a 2011 BMW 535i. 
 
 For the Toyota and Honda we attacked, we successfully retrieved the signal trace from the car and the replayed the same signal to the car key. However, the outcome of the replay attack is not successful, the car did not unlock as expected. Even surprisingly, the BMW attack failed at the signal collecting state. Using the same method, we tried using the SDR to collect the signal sent from the car. However, only noise is presented for the entire bandwidth of our tool, which is range from 125kHz-13.56MHz.
+
+A video can be accessed here: 
+
+[![video](http://img.youtube.com/vi/LvDs1kNqQco/0.jpg)](http://www.youtube.com/watch?v=LvDs1kNqQco)
 
 * _Analysis_
 
