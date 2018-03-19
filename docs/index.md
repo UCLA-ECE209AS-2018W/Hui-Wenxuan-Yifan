@@ -1,2 +1,2 @@
 # here we go
-![GitHub Logo](/images/logo.png)
+![Logo](/images/logo.png)
